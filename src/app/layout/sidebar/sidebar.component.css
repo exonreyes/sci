@@ -1,0 +1,21 @@
+.sidenav-ebackground {
+    background-color: #2E578B;
+    color: #ffffff;
+}
+
+a:hover {
+    color: white;
+    background: #2b5180;
+    border-left: 2px solid green;
+}
+
+.nav-link {
+    color: #dee5ee;
+}
+
+.nav-link-icon > img {
+    width: 20px;
+    height: 20px;
+}
+
+
