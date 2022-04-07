@@ -10,6 +10,7 @@ import { SkeletonComponent } from './layout/skeleton/skeleton.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { TopbarComponent } from './layout/topbar/topbar.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 
 @NgModule({
     declarations: [
@@ -23,7 +24,8 @@ import { FooterComponent } from './layout/footer/footer.component';
         BrowserModule,
         CoreModule,
         SharedModule,
-        AppRoutingModule
+        AppRoutingModule,
+        FontAwesomeModule
     ],
     providers: [{
         provide: LocationStrategy,
