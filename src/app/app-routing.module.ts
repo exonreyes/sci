@@ -6,6 +6,9 @@ const routes: Routes = [{
     path: '', component: SkeletonComponent, children: [{
         path: '', loadChildren: () => import('@modules/apps/apps-sales/apps-sales.module')
             .then((m) => m.AppsSalesModule)
+    }, {
+        path: '', loadChildren: () => import('@modules/apps/inventory/apps-inventory.module')
+            .then((m) => m.AppsInventoryModule)
     }]
 }];
 
