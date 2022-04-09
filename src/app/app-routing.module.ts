@@ -9,6 +9,9 @@ const routes: Routes = [{
     }, {
         path: '', loadChildren: () => import('@modules/apps/inventory/apps-inventory.module')
             .then((m) => m.AppsInventoryModule)
+    },{
+        path: '', loadChildren: () => import('@modules/apps/human-src/human-src.module')
+            .then((m) => m.HumanSrcModule)
     }]
 }];
 
