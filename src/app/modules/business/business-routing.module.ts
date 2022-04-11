@@ -1,14 +1,14 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {LaunchersComponent} from "@modules/apps/inventory/launchers/launchers.component";
+import {LaunchersComponent} from "@modules/business/launchers/launchers.component";
 
 
 const routes: Routes = [{
-    path: 'apps-inventory', component: LaunchersComponent
+    path: '', component: LaunchersComponent
 }];
 
 @NgModule({
     imports: [RouterModule.forChild(routes)], exports: [RouterModule]
 })
-export class AppInventoryRoutingModule {
+export class BusinessRoutingModule {
 }
