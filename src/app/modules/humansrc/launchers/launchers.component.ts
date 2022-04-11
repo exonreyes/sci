@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ICardLauncher} from "@shared/components/launcher-card/ilauncher-card.metadata";
+import {AppConstants} from "@data/constants/AppConstants";
 
 @Component({
     selector: 'app-launchers', templateUrl: './launchers.component.html', styleUrls: ['./launchers.component.css']
@@ -10,7 +11,7 @@ export class LaunchersComponent implements OnInit {
         name: 'Usuarios',
         description: 'Admininstre los usuarios que interactuan con el sistema',
         icon: this.icon_path + 'user-password.svg',
-        url: 'panel/humansrc/users',
+        url: AppConstants.APP_NAME + '/' + AppConstants.MOD_HUMANSRC + '/' + 'users',
         app_color: '#3c9b7a',
     }, {
         name: 'Empleados',
