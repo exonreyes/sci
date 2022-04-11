@@ -10,7 +10,6 @@ const routes: Routes = [{
 },
     {
         path: 'users',
-        component: UsersComponent,
         loadChildren: () => import('@modules/humansrc/apps/user/user.module')
             .then((m) => m.UserModule)
 
