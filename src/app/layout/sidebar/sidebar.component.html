@@ -1,9 +1,7 @@
 <nav class="sidenav shadow-right sidenav-ebackground">
     <div class="sidenav-menu">
         <div class="nav accordion" id="accordionSidenav">
-
             <!-- ----------------------- MENU CUENTA --------------------- -->
-
             <!-- * * Nota: * * Solo visible de manera responsiva-->
             <div class="sidenav-menu-heading d-sm-none">Cuenta</div>
             <!------------------------------ Menu (Alertas)--------------------------->
@@ -31,7 +29,7 @@
             <div class="sidenav-menu-heading">Principal</div>
             <!-- Sidenav Accordion (Dashboard)-->
             <!-- Sidenav Link (Tables)-->
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{urlDashboard}}">
                 <div class="nav-link-icon">
                     <img src="assets/icons/general/dashboard.svg">
                 </div>
@@ -44,9 +42,9 @@
 
 
             <div class="sidenav-menu-heading">Módulos</div>
-            <a *ngFor="let module of modules" class="nav-link" href="#">
+            <a *ngFor="let module of modules" class="nav-link" routerLink="{{module.path}}">
                 <div class="nav-link-icon">
-                    <img src="assets/icons/module/{{module.icon}}.svg">
+                    <img src="{{module.icon}}">
                 </div>
                 {{module.name}}
             </a>

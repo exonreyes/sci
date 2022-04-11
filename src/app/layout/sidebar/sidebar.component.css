@@ -5,8 +5,7 @@
 
 a:hover {
     color: white;
-    background: #2b5180;
-    border-left: 2px solid green;
+    background: #203f64; /*border-right: 10px solid green;*/
 }
 
 .nav-link {
