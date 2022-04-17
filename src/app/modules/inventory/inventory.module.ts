@@ -1,14 +1,20 @@
 import {NgModule} from '@angular/core';
 
+import {InventoryRoutingModule} from './inventory-routing.module';
+import {InventoryComponent} from './inventory.component';
 import {SharedModule} from "@shared/shared.module";
-import {InventoryRoutingModule} from "@modules/inventory/inventory-routing.module";
-import {LaunchersComponent} from "@modules/inventory/launchers/launchers.component";
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 
 
 @NgModule({
     declarations: [
-        LaunchersComponent
-    ], imports: [SharedModule, InventoryRoutingModule]
+        InventoryComponent
+    ],
+    imports: [
+        InventoryRoutingModule,
+        SharedModule,
+        FontAwesomeModule
+    ]
 })
 export class InventoryModule {
 }

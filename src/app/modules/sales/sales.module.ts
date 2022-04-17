@@ -1,11 +1,20 @@
 import {NgModule} from '@angular/core';
-import {SharedModule} from "@shared/shared.module";
 
-import {SalesRoutingModule} from "@modules/sales/sales-routing.module";
-import {LaunchersComponent} from "@modules/sales/launchers/launchers.component";
+import {SalesRoutingModule} from './sales-routing.module';
+import {SalesComponent} from './sales.component';
+import {SharedModule} from "@shared/shared.module";
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+
 
 @NgModule({
-    declarations: [LaunchersComponent], imports: [SharedModule, SalesRoutingModule]
+    declarations: [
+        SalesComponent
+    ],
+    imports: [
+        SalesRoutingModule,
+        SharedModule,
+        FontAwesomeModule
+    ]
 })
 export class SalesModule {
 }

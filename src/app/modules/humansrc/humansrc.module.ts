@@ -1,16 +1,19 @@
 import {NgModule} from '@angular/core';
-import {LaunchersComponent} from "@modules/humansrc/launchers/launchers.component";
+
+import {HumansrcRoutingModule} from './humansrc-routing.module';
+import {HumansrcComponent} from './humansrc.component';
 import {SharedModule} from "@shared/shared.module";
-import {HumansrcRoutingModule} from "@modules/humansrc/humansrc-routing.module";
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 
 
 @NgModule({
     declarations: [
-        LaunchersComponent
+        HumansrcComponent
     ],
     imports: [
+        HumansrcRoutingModule,
         SharedModule,
-        HumansrcRoutingModule
+        FontAwesomeModule
     ]
 })
 export class HumansrcModule {

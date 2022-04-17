@@ -1,10 +1,20 @@
 import {NgModule} from '@angular/core';
-import {LaunchersComponent} from "@modules/business/launchers/launchers.component";
-import {BusinessRoutingModule} from "@modules/business/business-routing.module";
+
+import {BusinessRoutingModule} from './business-routing.module';
+import {BusinessComponent} from './business.component';
 import {SharedModule} from "@shared/shared.module";
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+
 
 @NgModule({
-    declarations: [LaunchersComponent], imports: [BusinessRoutingModule, SharedModule]
+    declarations: [
+        BusinessComponent
+    ],
+    imports: [
+        BusinessRoutingModule,
+        SharedModule,
+        FontAwesomeModule
+    ]
 })
 export class BusinessModule {
 }
