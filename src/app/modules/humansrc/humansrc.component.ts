@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {apps_humansrc} from "@data/constants/apps-description";
-import {faBuilding} from "@fortawesome/free-regular-svg-icons";
 import {faPeopleLine} from "@fortawesome/free-solid-svg-icons/faPeopleLine";
+import {apps_humansrc} from "@data/constants/apps/humansrc/humansrc.data";
 
 @Component({
     selector: 'app-humansrc',

@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {apps_sales} from "@data/constants/apps-description";
 import {faShop} from "@fortawesome/free-solid-svg-icons/faShop";
+import {apps_sales} from "@data/constants/apps/sales/sales.data";
 
 @Component({
     selector: 'app-sales', templateUrl: './sales.component.html', styleUrls: ['./sales.component.css']

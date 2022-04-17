@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {apps_inventory} from "@data/constants/apps-description";
 import {faBoxesPacking} from "@fortawesome/free-solid-svg-icons/faBoxesPacking";
+import {apps_inventory} from "@data/constants/apps/inventory/inventory.data";
 
 @Component({
     selector: 'app-inventory', templateUrl: './inventory.component.html', styleUrls: ['./inventory.component.css']
