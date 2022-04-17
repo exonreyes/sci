@@ -10,7 +10,6 @@ import {ICardLauncher} from "@shared/components/launcher-card/ilauncher-card.met
 export class LauncherCardComponent implements OnInit {
     @Input()
     data!: ICardLauncher;
-
     constructor() {
     }
 
