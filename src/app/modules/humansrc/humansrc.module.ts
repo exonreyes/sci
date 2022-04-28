@@ -7,14 +7,14 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 
 
 @NgModule({
-    declarations: [
-        HumansrcComponent
-    ],
-    imports: [
-        HumansrcRoutingModule,
-        SharedModule,
-        FontAwesomeModule
-    ]
+  declarations: [
+    HumansrcComponent
+  ],
+  imports: [
+    HumansrcRoutingModule,
+    SharedModule,
+    FontAwesomeModule
+  ]
 })
 export class HumansrcModule {
 }

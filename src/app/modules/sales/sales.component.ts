@@ -3,17 +3,19 @@ import {faShop} from "@fortawesome/free-solid-svg-icons/faShop";
 import {apps_sales} from "@data/constants/apps/sales/sales.data";
 
 @Component({
-    selector: 'app-sales', templateUrl: './sales.component.html', styleUrls: ['./sales.component.css']
+  selector: 'app-sales',
+  templateUrl: './sales.component.html',
+  styleUrls: ['./sales.component.css']
 })
 export class SalesComponent implements OnInit {
-    apps = apps_sales;
-    title_module = 'Deparamento de Ventas';
-    shop = faShop;
+  apps = apps_sales;
+  title_module = 'Deparamento de Ventas';
+  shop = faShop;
 
-    constructor() {
-    }
+  constructor() {
+  }
 
-    ngOnInit(): void {
-    }
+  ngOnInit(): void {
+  }
 
 }
