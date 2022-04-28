@@ -1,16 +1,28 @@
 import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {HttpClientModule} from "@angular/common/http";
 import * as fromComponents from "./components";
-import {LauncherCardComponent} from './components/launcher-card/launcher-card.component';
+import {HttpClientModule} from "@angular/common/http";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {RouterModule} from "@angular/router";
-import { BankCardComponent } from './components/bank-card/bank-card.component';
+import {CommonModule} from "@angular/common";
 
 @NgModule({
-    declarations: [...fromComponents.components, LauncherCardComponent, BankCardComponent],
-    imports: [FormsModule, ReactiveFormsModule, HttpClientModule, CommonModule, RouterModule],
-    exports: [FormsModule, ReactiveFormsModule, HttpClientModule, CommonModule, RouterModule, ...fromComponents.components, LauncherCardComponent]
+  declarations: [...fromComponents.components],
+  imports: [
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    RouterModule,
+    CommonModule
+  ],
+
+  exports: [
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    RouterModule,
+    ...fromComponents.components,
+    CommonModule
+  ]
 })
 export class SharedModule {
 }

@@ -3,17 +3,18 @@ import {ICardLauncher} from "@shared/components/launcher-card/ilauncher-card.met
 
 
 @Component({
-    selector: 'app-launcher-card',
-    templateUrl: './launcher-card.component.html',
-    styleUrls: ['./launcher-card.component.css']
+  selector: 'app-launcher-card',
+  templateUrl: './launcher-card.component.html',
+  styleUrls: ['./launcher-card.component.css']
 })
 export class LauncherCardComponent implements OnInit {
-    @Input()
-    data!: ICardLauncher;
-    constructor() {
-    }
+  @Input()
+  data!: ICardLauncher;
 
-    ngOnInit(): void {
-    }
+  constructor() {
+  }
+
+  ngOnInit(): void {
+  }
 
 }
